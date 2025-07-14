@@ -1,10 +1,6 @@
-enum Status {
-    Loading = "loading",
-    Success = "success",
-    Error = "error"
-}
+type StatusType = "loading" | "success" | "error";
 
-function logStatus(status: Status): void {
+function logStatus(status: StatusType): void {
   if (status === "loading") {
     console.log("Loading...");
   } else if (status === "success") {
@@ -14,4 +10,9 @@ function logStatus(status: Status): void {
   }
 }
 
-logStatus("loading");
+logStatus("loading"); 
+logStatus("success"); 
+logStatus("error");  
+
+
+
